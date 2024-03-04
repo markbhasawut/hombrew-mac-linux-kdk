@@ -36,8 +36,8 @@ then
     export PKG_CONFIG_PATH="${NCURSES_PKGCONFIG_PATH}"
   fi
 
-  MAC_LINUX_KDK_HOSTCFLAGS="-I${HOMEBREW_ROOT}/opt/openssl@1.1/include"
-  MAC_LINUX_KDK_HOSTLDFLAGS="-L${HOMEBREW_ROOT}/opt/openssl@1.1/lib"
+  MAC_LINUX_KDK_HOSTCFLAGS="-I${HOMEBREW_ROOT}/opt/openssl@3/include"
+  MAC_LINUX_KDK_HOSTLDFLAGS="-L${HOMEBREW_ROOT}/opt/openssl@3/lib"
 elif [ -d "${HOME}/.nix-profile" ]
 then
   echo "NIX"
